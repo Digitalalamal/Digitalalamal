@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة تكلفة طباعة ألواح على خامة الكانفاس</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="assets/imgs/logo.png" alt="logo">
+        <a href="https://digitalamal.com/">العودة الي المتجر</a>
+    </header>
+    <div class="container">
+        <div class="title">
+            حاسبة تكلفة طباعة ألواح على خامة الكانفاس
+        </div>
+        <div class="calculator">
+            <div class="calculator-form">
+                <!-- Quantity -->
+                <div class="form-group">
+                    <label for="oneDrwa">الكمية</label>
+                    <div class="form-input">
+                        <input data-name="لوحة واحدة" class="one-draw" title="لوحة واحدة" type="radio"
+                            id="oneDraw" name="quantity" value="1" />
+                        <input data-name="عدة لوحات" class="many-draw" title="عدة لوحات" type="radio" id="manyDraw"
+                            name="quantity" value="2" />
+                    </div>
+                </div>
+                <!-- Frame -->
+                <div class="form-group">
+                    <label for="oneDrwa">إضافة اطار</label>
+                    <div class="form-input">
+                        <input data-name="نعم" class="frame-yes" title="نعم" type="radio" id="frameYes"
+                            name="frame" value="1" />
+                        <input data-name="لا" class="frame-no" title="لا" type="radio" id="frameNo" name="frame"
+                            value="2" />
+                    </div>
+                </div>
+                <!-- Height -->
+                <div class="form-group">
+                    <label for="height">عرض اللوحة (سم)</label>
+                    <input class="input-number input-height" title="الارتفاع" type="number" id="height" name="height"
+                        min="0" max="1000" />
+                </div>
+                <!-- Width -->
+                <div class="form-group">
+                    <label for="oneDrwa">ارتفاع اللوحة (سم)</label>
+                    <input class="input-number input-width" title="العرض" type="number" id="width" name="width" min="0"
+                        max="1000" />
+                </div>
+                <div class="form-group">
+                    <button class="btn-calculate" type="button" id="btn-calculate" name="btn-calculate"
+                        value="btn-calculate" onclick="calculate()">
+                        احسب التكلفة
+                    </button>
+                </div>
+            </div>
+            <div class="calculator-img">
+                <span>الكمية : <span id="imgQuantity"></span></span>
+                <br>
+                <span>النوع : <span id="imgFrame"></span></span>
+                <br>
+                <span>سعر اللوحة الواحدة : <span id="imgPrice"></span></span>
+            </div>
+        </div>
+        <div class="result">
+            <p>
+                تكلفة اللوحة الواحدة
+            </p>
+            <p class="price" id="price">
+                0
+            </p>
+            <p>
+                ريال سعودي
+            </p>
+            <a href="https://wa.me/966544491002" target="_blank">
+                اطلب الان
+            </a>
+        </div>
+    </div>
+    <script defer src="assets/main.js"></script>
+</body>
+
+</html>
