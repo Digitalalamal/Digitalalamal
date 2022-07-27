@@ -32,14 +32,14 @@ calculate = () => {
       if (frameYes.checked) {
         imgFrame.innerHTML = "بأطار";
         let price =
-          (parseInt(height.value) / 100) * (parseInt(width.value) / 100) * 300;
+          (parseInt(height.value) / 100) * (parseInt(width.value) / 100) * 320;
         result.innerHTML = Math.round(price);
         imgPrice.innerHTML = Math.round(price);
       
     } else if (frameNo.checked) {
       imgFrame.innerHTML = "بدون أطار";
       let price =
-        (parseInt(height.value) / 100) * (parseInt(width.value) / 100) * 300;
+        (parseInt(height.value) / 100) * (parseInt(width.value) / 100) * 290;
       result.innerHTML = Math.round(price);
       imgPrice.innerHTML = Math.round(price);
     }}
