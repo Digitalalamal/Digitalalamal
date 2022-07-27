@@ -28,7 +28,7 @@ calculate = () => {
         imgPrice.innerHTML = Math.round(price);
       }
     } else if (manyDraw.checked) {
-      imgQuantity.innerHTML = "لوحات متعددة";
+      imgQuantity.innerHTML = "12 لوحة فأكثر";
       if (frameYes.checked) {
         imgFrame.innerHTML = "بأطار";
         let price =
